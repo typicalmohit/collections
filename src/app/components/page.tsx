@@ -20,7 +20,6 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Code as CodeIcon } from "lucide-react";
 import { useState } from "react";
-import { cn } from "@/lib/utils";
 
 export default function ComponentsPage() {
   const [activeCode, setActiveCode] = useState<string | null>(null);
@@ -79,10 +78,7 @@ export default function InputDemo() {
       title: "Select",
       description: "Select component with options",
       demo: (
-        <Select
-          defaultValue="light"
-          onValueChange={(value) => console.log(value)}
-        >
+        <Select defaultValue="light">
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Theme" />
           </SelectTrigger>
@@ -103,7 +99,7 @@ export default function InputDemo() {
 
 export default function SelectDemo() {
   return (
-    <Select defaultValue="light" onValueChange={(value) => console.log(value)}>
+    <Select defaultValue="light">
       <SelectTrigger className="w-[180px]">
         <SelectValue placeholder="Theme" />
       </SelectTrigger>
