@@ -10,7 +10,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Code, Copy, Check } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 interface ComponentShowcase {
   title: string;
