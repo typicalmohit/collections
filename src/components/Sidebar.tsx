@@ -10,7 +10,6 @@ import {
   Code,
   ChevronRight,
   Palette,
-  FileText,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
