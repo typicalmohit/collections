@@ -1,17 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-} from "@/components/ui/card";
-import { ChevronDown, ChevronRight, ExternalLink, Menu } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { ChevronDown, ChevronRight, Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { mainGroups, resources } from "@/app/collections/3d-models/resources";
+import { mainGroups } from "@/app/collections/3d-models/resources";
 
 export default function ModelsPage() {
   const [expandedGroups, setExpandedGroups] = useState<string[]>(
